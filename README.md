@@ -26,32 +26,14 @@ A web application to generate fake book information for testing purposes. Suppor
 ## Setup and Running Locally
 
 1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/Abdurahmanit/Book.git](https://github.com/Abdurahmanit/Book.git)
-    cd Book
-    ```
 
 2.  **Install backend dependencies:**
-    ```bash
-    cd server
-    npm install
-    cd ..
-    ```
 
 3.  **Run the application (starts the backend server):**
-    ```bash
-    npm start --prefix server
-    ```
-    Or for development with nodemon (if you installed it as a dev dependency):
-    ```bash
-    npm run dev --prefix server
-    ```
 
 4.  Open your browser and navigate to `http://localhost:3000`. The port might vary if 3000 is in use (check server console output).
 
 ## Deployment to Render
-
-This project is configured for deployment on Render using the Node.js environment.
 
 1.  **Push your code to your GitHub repository (`https://github.com/Abdurahmanit/Book.git`).**
 
@@ -61,9 +43,9 @@ This project is configured for deployment on Render using the Node.js environmen
 
 4.  **Configuration:**
     -   **Environment:** `Node`
-    -   **Root Directory:** (leave blank or set to the root of your project if your `package.json` and `Procfile` are there)
-    -   **Build Command:** `npm install --prefix server` (or `cd server && npm install`)
-    -   **Start Command:** `node server/server.js` (Render should pick this up from the `Procfile` automatically if `Procfile` is `web: node server/server.js`). Ensure your `Procfile` is in the root of the repository.
+    -   **Root Directory:** `leave blank`
+    -   **Build Command:** `npm install --prefix server` or `cd server && npm install`
+    -   **Start Command:** `node server/server.js`
     -   **Health Check Path (Optional but recommended):** `/` (Render will check if your main page loads)
 
 5.  **Deploy.** Render will build and deploy your application. The URL will be provided by Render.
