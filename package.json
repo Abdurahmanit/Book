@@ -1,5 +1,5 @@
 {
-  "name": "server",
+  "name": "book-generator-app",
   "version": "1.0.0",
   "main": "server/server.js",
   "scripts": {
@@ -9,7 +9,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Book data generator application",
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "canvas": "^2.11.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "seedrandom": "^3.0.5"
+  },
   "devDependencies": {
     "nodemon": "^3.1.10"
   }
