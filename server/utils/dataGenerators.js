@@ -4,9 +4,9 @@ const { times } = require('./timesFunction');
 const { createCanvas } = require('canvas');
 
 const getFakerInstance = (locale) => {
-  if (locale === 'de-DE') return new Faker({ locale: [de] });
-  if (locale === 'ja-JP') return new Faker({ locale: [ja] });
-  return new Faker({ locale: [en_US] }); // Default to en_US
+  if (locale === 'de-DE') return new Faker({ locale: [de, en] });
+  if (locale === 'ja-JP') return new Faker({ locale: [ja, en] });
+  return new Faker({ locale: [en_US, en] });
 };
 
 const generateBook = (overallBookIndex, userSeed, languageRegion, avgLikes, avgReviews) => {
