@@ -1,4 +1,4 @@
-const { Faker, en_US, de, ja } = require('@faker-js/faker');
+const { Faker, en_US, de, ja, en } = require('@faker-js/faker');
 const seedrandom = require('seedrandom');
 const { times } = require('./timesFunction');
 const { createCanvas } = require('canvas');
